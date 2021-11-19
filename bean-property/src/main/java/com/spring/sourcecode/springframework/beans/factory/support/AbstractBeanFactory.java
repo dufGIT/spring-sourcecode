@@ -1,0 +1,73 @@
+package com.spring.sourcecode.springframework.beans.factory.support;
+
+import com.spring.sourcecode.springframework.beans.BeansException;
+import com.spring.sourcecode.springframework.beans.factory.BeanFactory;
+import com.spring.sourcecode.springframework.beans.factory.config.BeanDefinition;
+
+
+/**
+ * @Author df
+ * @Date 2021/11/8 11:43
+ * @Version 1.0
+ */
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
+    // 第三章节的getBean方式**********************开始
+    /*
+    抽象类的getBean方法定义了模板方法,先获取单例bean,如没获取到则取出bean定义做相应的实例化操作，
+    最后创建bean,此方法是调用过程，而getBeanDefinition(获取bean定义)方法与createBean(创建bean)方法
+    则是由不同的实现方法实现功能
+    */
+   /* @Override
+    public Object getBean(String name) throws BeansException {
+        // 从单例对象获取bean
+        Object bean = getSingleton(name);
+        if (bean != null) {
+            return bean;
+        }
+        BeanDefinition beanDefination = getBeanDefinition(name);
+        return createBean(name, beanDefination);
+    }*/
+    // 第三章节的getBean方式**********************结束
+
+    // *************************第4节添加--可传入参***********************
+    @Override
+    public Object getBean(String name) throws BeansException {
+        return doGetBean(name, null);
+    }
+
+    @Override
+    public Object getBean(String name, Object... args) throws BeansException {
+        return doGetBean(name, args);
+    }
+
+    // 还是模板方法
+    protected <T> T doGetBean(final String name, final Object[] args) {
+        // 获取单例bean
+        Object bean = getSingleton(name);
+        if (bean != null) {
+            System.out.println("因为存在对象，从单例容器中取出对象");
+            return (T) bean;
+        }
+        BeanDefinition beanDefination = getBeanDefinition(name);
+        return (T) createBean(name, beanDefination, args);
+    }
+    // *************************第4节添加--可传入参***********************
+
+    protected abstract BeanDefinition getBeanDefinition(String beanName) throws BeansException;
+
+    // 此方法第四节传添加了一个参数为Object[] args
+    protected abstract Object createBean(String beanName, BeanDefinition beanDefinition, Object[] args) throws BeansException;
+
+
+    /*
+    第三节学习的理解
+    1.AbstractBeanFactory首先继承了DefaultSingletonBeanRegistry,也就具备了使用单例注册类方法
+      如： Object bean = getSingleton(name);
+    2.接下来很重要的一点是关于BeanFactory的实现，在方法getBean的实现过程中可以看到，
+      主要是对单例Bean对象的获取以及获取不到时需要拿到Bean的定义做相应Bean实例化操作。那么getBean并没有自身的去实现这些方法，
+      而是只定义了调用过程以及提供了抽象方法，由实现此抽象类的其他类做相应实现
+    3.后续继承抽象类AbstractBeanFactory的类有两个，包括:AbstractAutowireCapableBeanFactory、
+      DefaultListableBeanFactory这两个类分别做了相应的处理
+ * */
+
+}
