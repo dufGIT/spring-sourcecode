@@ -11,7 +11,7 @@
 	<groupId>com.spring</groupId>
 	<artifactId>sourcecode</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sourcecode</name>
+	<name>bean-property</name>
 	<description>spring源码学习和实践</description>
 	<properties>
 		<java.version>1.8</java.version>

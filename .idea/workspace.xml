@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bbb352ca-204a-474a-9f92-79dee6f36357" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bean-property/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/BeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/BeanFactory01.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/BeansException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/SingletonBeanRegistry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/BeanDefinitionRegistry.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest03.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/DefaultListableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/InstantiationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/SimpleInstantiationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/CglibSubclassingInstantiationStrategy.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/BeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/AbstractBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest04.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/PropertyValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/PropertyValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/PropertyValues.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/BeanReference.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/ApiTest04.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest05.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/UserService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/BeanDefinition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spring/sourcecode/SourcecodeApplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/bcrj/Maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\bcrj\Maven\toolchains.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-480" />
+    <option name="y" value="162" />
+    <option name="width" value="1947" />
+    <option name="height" value="1107" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sourcecode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+              <item name="bean-property" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+              <item name="sourcecode" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bean-property/pom.xml" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.spring.sourcecode.springframework" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.spring.sourcecode.springframework" />
+      <recent name="com.spring.sourcecode.springframework.test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.SourcecodeApplication">
+    <configuration name="SourcecodeApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.spring.sourcecode.SourcecodeApplication" />
+      <module name="sourcecode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.sourcecode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest03.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sourcecode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.sourcecode.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.sourcecode.springframework" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.sourcecode.springframework.ApiTest03" />
+      <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest04.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sourcecode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.sourcecode.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.sourcecode.springframework" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.sourcecode.springframework.ApiTest04" />
+      <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.test_BeanFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="sourcecode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.spring.sourcecode.springframework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.spring.sourcecode.springframework" />
+      <option name="MAIN_CLASS_NAME" value="com.spring.sourcecode.springframework.ApiTest" />
+      <option name="METHOD_NAME" value="test_BeanFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SourcecodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sourcecode" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.spring.sourcecode.SourcecodeApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SourcecodeApplication" />
+        <item itemvalue="JUnit.ApiTest04.test_BeanFactory" />
+        <item itemvalue="JUnit.ApiTest03.test_BeanFactory" />
+        <item itemvalue="JUnit.ApiTest.test_BeanFactory" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbb352ca-204a-474a-9f92-79dee6f36357" name="Default Changelist" comment="" />
+      <created>1636336251345</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636336251345</updated>
+      <workItem from="1636336252902" duration="14454000" />
+      <workItem from="1636427700582" duration="4007000" />
+      <workItem from="1636514172750" duration="5440000" />
+      <workItem from="1636796818410" duration="2892000" />
+      <workItem from="1636941271374" duration="3709000" />
+      <workItem from="1636947242767" duration="2540000" />
+      <workItem from="1636960494635" duration="19000" />
+      <workItem from="1636960549886" duration="191000" />
+      <workItem from="1637030206927" duration="4168000" />
+      <workItem from="1637286275268" duration="2779000" />
+      <workItem from="1637309138214" duration="99000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.09 at 13h 54m 31s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.09 at 13h 54m 44s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest03_test_BeanFactory - 2021.11.10 at 14h 19m 17s.xml">
+      <configuration name="ApiTest03.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.10 at 14h 20m 10s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.10 at 14h 20m 53s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest03_test_BeanFactory - 2021.11.13 at 18h 04m 45s.xml">
+      <configuration name="ApiTest03.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest03_test_BeanFactory - 2021.11.13 at 18h 06m 42s.xml">
+      <configuration name="ApiTest03.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.13 at 18h 34m 02s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.13 at 18h 35m 00s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ApiTest04_test_BeanFactory - 2021.11.13 at 18h 36m 43s.xml">
+      <configuration name="ApiTest04.test_BeanFactory" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="40298000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28652596" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39751554" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="11" visible="true" weight="0.11439114" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.122564934" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.24107143" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="aiXcoder" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/BeansException.java" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.3.13-SNAPSHOT/spring-beans-5.3.13-20211104.141544-15.jar!/org/springframework/beans/factory/config/SingletonBeanRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.3.13-SNAPSHOT/spring-beans-5.3.13-20211104.141544-15.jar!/org/springframework/beans/factory/support/DefaultSingletonBeanRegistry.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/BeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/SingletonBeanRegistry.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest03.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/InstantiationStrategy.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/BeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/CglibSubclassingInstantiationStrategy.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/SimpleInstantiationStrategy.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/BeanDefinition.java" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.3.13-SNAPSHOT/spring-beans-5.3.13-20211104.141544-15.jar!/org/springframework/beans/PropertyValues.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.3.13-SNAPSHOT/spring-beans-5.3.13-20211104.141544-15.jar!/org/springframework/beans/factory/config/BeanDefinition.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-753">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/BeanDefinitionRegistry.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/DefaultSingletonBeanRegistry.java" />
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-beans/5.3.13-SNAPSHOT/spring-beans-5.3.13-20211104.141544-15.jar!/org/springframework/beans/factory/config/BeanReference.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/DefaultListableBeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/AbstractBeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/ApiTest04.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/PropertyValue.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/PropertyValues.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/BeanDefinition.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/config/BeanReference.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest04.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/ApiTest05.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/UserDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spring/sourcecode/springframework/test/UserService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spring/sourcecode/SourcecodeApplication.java" />
+    <entry file="file://$PROJECT_DIR$/bean-property/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
