@@ -7,7 +7,9 @@ import com.spring.sourcecode.springframework.beans.factory.config.BeanReference;
 import com.spring.sourcecode.springframework.beans.factory.support.DefaultListableBeanFactory;
 import com.spring.sourcecode.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-import com.spring.sourcecode.springframework.testready.UserService;
+import com.spring.sourcecode.springframework.context.supprot.ClassPathXmlApplicationContext;
+
+import com.spring.sourcecode.springframework.test.UserService;
 import org.junit.Test;
 
 
@@ -16,19 +18,16 @@ import org.junit.Test;
  * @Date 2021/11/8 13:41
  * @Version 1.0
  */
-public class ApiTest06 {
+public class ApiTest07 {
     //
     @Test
     public void test_xml() {
         // 1.初始化BeanFactory
-        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+        ClassPathXmlApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("classpath:spring.xml");
 
-        // 2.读取配置文件&注册bean
-        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
-        reader.loadBeanDefinitions("classpath:spring.xml");
-
-        // 3.获取Bean对象调用方法
-        UserService userService = beanFactory.getBean("userService", UserService.class);
+        // 2.获取bean对象调用方法
+        UserService userService = applicationContext.getBean("userService", UserService.class);
         userService.queryUserInfo();
     }
 }

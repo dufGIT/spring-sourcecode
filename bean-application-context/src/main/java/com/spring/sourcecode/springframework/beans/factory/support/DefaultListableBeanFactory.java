@@ -27,7 +27,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
     }
 
     @Override
-    protected BeanDefinition getBeanDefinition(String beanName) throws BeansException {
+    public BeanDefinition getBeanDefinition(String beanName) throws BeansException {
         BeanDefinition beanDefination = beanDefinitionMap.get(beanName);
         if (beanDefination == null) throw new BeansException("No bean named " + beanName + " is defined");
         return beanDefination;
@@ -37,15 +37,15 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
     @Override
     public void preInstantiateSingletons() throws BeansException {
         // jdk8新引入的运算符-双冒号的用法，这里beanDefinationMap.keySet()是getBean()的参数
-        beanDefinationMap.keySet().forEach(this::getBean);
+        beanDefinitionMap.keySet().forEach(this::getBean);
     }
 
     // 根据类的类型获取相关联的类信息
     @Override
     public <T> Map<String, T> getBeansOfType(Class<T> type) throws BeansException {
         Map<String, T> result = new HashMap<>();
-        // xml解析出来就放入beanDefinationMap里，此时从beanDefinationMap就可以找到需要的类
-        beanDefinationMap.forEach((beanName, beanDefnition) -> {
+        // xml解析出来就放入beanDefinitionMap里，此时从beanDefinitionMap就可以找到需要的类
+        beanDefinitionMap.forEach((beanName, beanDefnition) -> {
             Class beanClass = beanDefnition.getBeanClass();
             // isAssignableFrom是判断两个类之间关系的，不是实例对象关系，是本身类，是超类，是子类，是接口类通通都是true
             if (type.isAssignableFrom(beanClass)) {
@@ -58,7 +58,7 @@ public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFacto
 
     @Override
     public String[] getBeanDefinitionNames() {
-        return beanDefinationMap.keySet().toArray(new String[0]);
+        return beanDefinitionMap.keySet().toArray(new String[0]);
     }
 
      /*

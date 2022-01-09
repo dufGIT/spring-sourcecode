@@ -4,6 +4,7 @@ import com.spring.sourcecode.springframework.beans.BeansException;
 import com.spring.sourcecode.springframework.beans.factory.BeanFactory;
 import com.spring.sourcecode.springframework.beans.factory.config.BeanDefinition;
 import com.spring.sourcecode.springframework.beans.factory.config.BeanPostProcessor;
+import com.spring.sourcecode.springframework.beans.factory.config.ConfigurableBeanFactory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
  * @Date 2021/11/8 11:43
  * @Version 1.0
  */
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements BeanFactory {
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
     // 第三章节的getBean方式**********************开始
     /*
     抽象类的getBean方法定义了模板方法,先获取单例bean,如没获取到则取出bean定义做相应的实例化操作，
@@ -55,7 +56,6 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         // 获取单例bean
         Object bean = getSingleton(name);
         if (bean != null) {
-            System.out.println("因为存在对象，从单例容器中取出对象");
             return (T) bean;
         }
         BeanDefinition beanDefination = getBeanDefinition(name);

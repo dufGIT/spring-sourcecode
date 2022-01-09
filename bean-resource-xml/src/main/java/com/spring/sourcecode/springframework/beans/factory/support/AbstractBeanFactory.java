@@ -50,7 +50,6 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         // 获取单例bean
         Object bean = getSingleton(name);
         if (bean != null) {
-            System.out.println("因为存在对象，从单例容器中取出对象");
             return (T) bean;
         }
         BeanDefinition beanDefination = getBeanDefinition(name);

@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sourcecode.iml" filepath="$PROJECT_DIR$/.idea/sourcecode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bean-application-context/sourcecode.iml" filepath="$PROJECT_DIR$/bean-application-context/sourcecode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bean-property/sourcecode (1).iml" filepath="$PROJECT_DIR$/bean-property/sourcecode (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/bean-resource-xml/sourcecode (2).iml" filepath="$PROJECT_DIR$/bean-resource-xml/sourcecode (2).iml" />
     </modules>
   </component>
 </project>

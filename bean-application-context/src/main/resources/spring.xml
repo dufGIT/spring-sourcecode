@@ -1,9 +1,13 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans">
-    <bean id="userDao" class="com.spring.sourcecode.springframework.testready.UserDao"></bean>
-
-    <bean id="userService" class="com.spring.sourcecode.springframework.testready.UserService">
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans>
+    <bean id="userDao" class="com.spring.sourcecode.springframework.test.UserDao"></bean>
+    <bean id="userService" class="com.spring.sourcecode.springframework.test.UserService">
         <property name="uId" value="10001"></property>
+        <property name="company" value="腾讯"></property>
+        <property name="location" value="深圳"></property>
         <property name="userDao" ref="userDao"></property>
     </bean>
+
+    <bean class="com.spring.sourcecode.springframework.beanhadel.MyBeanPostProcessor"></bean>
+    <bean class="com.spring.sourcecode.springframework.beanhadel.MyBeanFactoryPostProcessor"></bean>
 </beans>
