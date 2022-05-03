@@ -17,6 +17,7 @@ import java.util.Set;
  */
 // 单例类注册实现方法
 public class DefaultSingletonBeanRegistry implements SingletonBeanRegistry {
+    protected static final Object NULL_OBJECT = new Object();
     private Map<String, Object> singletonObjects = new HashMap<String, Object>();
     // 要吊销的bean容器
     private final Map<String, DisposableBean> disposableBeans = new HashMap<>();

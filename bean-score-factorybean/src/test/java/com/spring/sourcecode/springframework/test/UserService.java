@@ -12,24 +12,13 @@ import com.spring.sourcecode.springframework.context.ApplicationContextAware;
 public class UserService {
     private String uId;
     private String company;
-    private UserDao userDao;
+    private IUserDao userDao;
     private String location;
 
 
-    public void queryUserInfo() {
-        System.out.println("查询用户信息：" + userDao.queryUserName(uId)
-                + ",公司名称：" + company + ",地址：" + location);
+    public String queryUserInfo() {
+        return userDao.queryUserName(uId) + "," + company + "," + location;
     }
-
-    /*@Override
-    public void destroy() throws Exception {
-        System.out.println("执行接口实现方式的DisposableBean：UserService.destroy");
-    }
-
-    @Override
-    public void afterPropertiesSet() {
-        System.out.println("执行接口实现方式的InitializingBean：UserService.afterPropertiesSet");
-    }*/
 
     public String getuId() {
         return uId;
@@ -39,11 +28,11 @@ public class UserService {
         this.uId = uId;
     }
 
-    public UserDao getUserDao() {
+    public IUserDao getUserDao() {
         return userDao;
     }
 
-    public void setUserDao(UserDao userDao) {
+    public void setUserDao(IUserDao userDao) {
         this.userDao = userDao;
     }
 

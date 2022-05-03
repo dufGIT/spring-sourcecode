@@ -21,17 +21,13 @@ import org.junit.Test;
 public class ApiTest {
     //
     @Test
-    public void test_xml() {
+    public void testFactoryBean() {
         // 1.初始化BeanFactory
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:spring.xml");
         applicationContext.registerShutdownHook();
 
         // 2.获取bean对象调用方法
-        UserService userService1 = applicationContext.getBean("userService", UserService.class);
-        // 2. 获取Bean对象调用方法
-        UserService userService2 = applicationContext.getBean("userService", UserService.class);
-
-        System.out.println(userService1);
-        System.out.println(userService2);
+        UserService userService = applicationContext.getBean("userService", UserService.class);
+        System.out.println("测试结果：" + userService.queryUserInfo());
     }
 }

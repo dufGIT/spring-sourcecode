@@ -2,10 +2,12 @@ package com.spring.sourcecode.springframework.beans.factory.support;
 
 import com.spring.sourcecode.springframework.beans.BeansException;
 import com.spring.sourcecode.springframework.beans.factory.BeanFactory;
+import com.spring.sourcecode.springframework.beans.factory.FactoryBean;
 import com.spring.sourcecode.springframework.beans.factory.config.BeanDefinition;
 import com.spring.sourcecode.springframework.beans.factory.config.BeanPostProcessor;
 import com.spring.sourcecode.springframework.beans.factory.config.ConfigurableBeanFactory;
 import com.spring.sourcecode.springframework.util.ClassUtils;
+import org.omg.CORBA.OBJ_ADAPTER;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +18,7 @@ import java.util.List;
  * @Date 2021/11/8 11:43
  * @Version 1.0
  */
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+public abstract class AbstractBeanFactory extends FactoryBeanRegistrySupport implements ConfigurableBeanFactory {
     // 第三章节的getBean方式**********************开始
     /*
     抽象类的getBean方法定义了模板方法,先获取单例bean,如没获取到则取出bean定义做相应的实例化操作，
@@ -54,17 +56,29 @@ public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry i
         return (T) getBean(name);
     }
 
-    // 还是模板方法
     protected <T> T doGetBean(final String name, final Object[] args) {
         // 获取单例bean
-        Object bean = getSingleton(name);
-        if (bean != null) {
-            return (T) bean;
+        Object sharedInstance = getSingleton(name);
+        if (sharedInstance != null) {
+            return (T) getObjectForBeanInstance(sharedInstance, name);
         }
         BeanDefinition beanDefination = getBeanDefinition(name);
-        return (T) createBean(name, beanDefination, args);
+        Object bean = createBean(name, beanDefination, args);
+        return (T) getObjectForBeanInstance(bean, name);
     }
-    // *************************第4节添加--可传入参***********************
+
+    private Object getObjectForBeanInstance(Object beanInstance, String beanName) {
+        if (!(beanInstance instanceof FactoryBean)) {
+            return beanInstance;
+        }
+        // 容器中是否获取的到
+        Object object = getCachedObjectForFactoryBean(beanName);
+        if (object == null) {
+            FactoryBean<?> factoryBean = (FactoryBean<?>) beanInstance;
+            object = getObjectFromFactoryBean(factoryBean, beanName);
+        }
+        return object;
+    }
 
     protected abstract BeanDefinition getBeanDefinition(String beanName) throws BeansException;
 
